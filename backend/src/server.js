@@ -1,9 +1,15 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const routes = require('./routes');
 
 const app = express();
 
 const port = 3333;
+
+mongoose.connect('mongodb+srv://dvcrystal:dvcrystal@cluster0-set5u.mongodb.net/aircnc?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 
 // req.query = acessar os query params(pela url)
 // req.params = Acessar route params (para edição, delete)
