@@ -35,6 +35,22 @@ $ yarn add mongoose
 
 
 # Criar o MVC, dentro de src, criar pastas models e controllers, pois o views será o React, ou seja, separada.
-# OBS: Models são tabelas, Schemas. Controllers são
+# OBS: **Models** são tabelas, Schemas. **Controllers** são usados para colocarmos as regras de negócio da nossa aplicação.
+# O controller recebe a requisição, a nossa rota informa para ele qual ***requisição*** que ele vai receber, tratar a req e devolver uma ***response***
 
 # Dentro de model, criar User.js, começar colocando as informações de quais campos esse user vai ter no banco
+
+
+# Criar arquivo ***SessionController.js***, estou criando uma sessão na minha app, ou seja, login, logout, listagem dos usuarios logados ( exemplos ).
+
+# Para auxiliar nas urls, em noEnvioriment adiciobnar a seguinte variavel
+{
+  "base_url" : "http://localhost:3333"
+}
+
+# ***RECURSO***
+
+Desestruturação que pega informações de dentro de uma variavel
+const { email } = req.body;
+
+
