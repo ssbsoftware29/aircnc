@@ -53,4 +53,17 @@ $ yarn add mongoose
 Desestruturação que pega informações de dentro de uma variavel
 const { email } = req.body;
 
+# Criação dos spots das empresas, imagem, empresa, tecnologias e o valor da diaria. Criar um model chamado ***Spot.js***
+# Criar arquivo de controller para os spots, para criação dos métodos de banco.
+# *** O tipo JSOn não suporta envio de imagens, por isso é necessário o uso de outro tipo, "Multpart Forms" ***
+
+# Para uso de requisições **Multipart forms ***, será necessarios instalar a lib ***multer***
+$ yarn add multer
+
+# Dentro de src, criar uma pasta ***config*** para configurar o ***multer***, e dentro dela um arquivo ***upload.js***
+
+# Cria a pasta uploads na raiz do projeto, que é onde vão ficar os arquivos.
+
+
+
 
