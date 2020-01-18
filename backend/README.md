@@ -64,6 +64,10 @@ $ yarn add multer
 
 # Cria a pasta uploads na raiz do projeto, que é onde vão ficar os arquivos.
 
+# Adiciona a extensão ***CORS*** para gerencias os acessos externos da sua API
+
+$ yarn add cors
+# ir no server.js e importar o cors
 
 
 
